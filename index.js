@@ -10,3 +10,9 @@ function fuzzyMatch(array, string){
     return driver[0] == string[0];
   })
 }
+
+function matchName (array, string){
+  return array.filter(driver => {
+    return driver.name == string;
+  })
+}
